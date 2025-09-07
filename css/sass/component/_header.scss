@@ -1,0 +1,13 @@
+.header-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  a {
+    font-size: 16px;
+    color: #808080;
+    &:hover {
+      color: $setting_primary_color;
+    }
+  }
+}

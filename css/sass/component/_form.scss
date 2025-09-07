@@ -1,5 +1,8 @@
 .form-section {
   padding: 80px 0 100px;
+  @include xs {
+    padding-bottom: 50px;
+  }
   .form-cont {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -82,9 +85,7 @@
           align-items: center;
           justify-content: space-between;
           position: relative;
-          @include xs {
-            justify-content: space-around;
-          }
+
           p {
             font-size: 18px;
             position: relative;
@@ -105,6 +106,9 @@
       background-color: lighten($setting_primary_color, 43%);
       padding: 45px;
       border-radius: 20px;
+      @include sm {
+        padding: 20px;
+      }
       .form-title h3 {
         font-size: 30px;
         font-weight: $weight_extrabold;
@@ -167,6 +171,14 @@
         font-weight: $weight_bold;
         border-radius: 25px;
         height: 50px;
+        transition: all 0.3s ease-in-out;
+        &:focus {
+          color: #fff;
+        }
+        &:hover {
+          background-color: $setting_secondary_color;
+          color: #fff;
+        }
       }
     }
   }
