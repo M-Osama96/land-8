@@ -1,0 +1,99 @@
+.features-section {
+  padding: 100px 0;
+  .features-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .features-text {
+      max-width: 750px;
+      .features-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: $weight_extrabold;
+        @include xs {
+          font-size: 25px;
+          font-weight: $weight_bold;
+        }
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+        @include xs {
+          font-size: 14px;
+        }
+      }
+    }
+    .features-options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 90px;
+      padding: 50px 0;
+      @include sm {
+        gap: 30px;
+      }
+      @include xs {
+        flex-direction: column;
+        gap: 40px;
+      }
+      .features-option {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .features-icon {
+          width: 68px;
+          height: 68px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: lighten($setting_primary_color, 43%);
+          i {
+            font-size: 36px;
+            color: $setting_primary_color;
+          }
+        }
+        p {
+          font-size: 18px;
+          font-weight: $weight_bold;
+          text-align: center;
+        }
+      }
+    }
+    .buy-now {
+      font-size: 22px;
+      font-weight: $weight_bold;
+      color: white;
+      background-color: $setting_primary_color;
+      height: 60px;
+      padding: 0 30px;
+      width: fit-content;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.3s ease-in-out;
+      i {
+        font-size: 36px;
+      }
+      &:focus {
+        color: #fff;
+      }
+      &:hover {
+        background-color: $setting_secondary_color;
+        color: #fff;
+      }
+      @include sm {
+        font-size: 18px;
+        height: 45px;
+        gap: 5px;
+        i {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
