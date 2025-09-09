@@ -2,6 +2,7 @@ Fancybox.bind("[data-fancybox]");
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
+  loop: true,
   spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",

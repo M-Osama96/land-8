@@ -942,6 +942,12 @@ iframe {
   position: absolute;
   font-size: 16px;
 }
+.form-section .form-cont .contact-form .form-grid .form-group select:has([hidden]:checked) {
+  color: #808080;
+}
+.form-section .form-cont .contact-form .form-grid .form-group select:has([hidden]:checked) option {
+  color: #000000;
+}
 .form-section .form-cont .contact-form .submit-btn {
   margin-top: 20px;
   width: 100%;
