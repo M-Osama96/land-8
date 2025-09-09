@@ -5,6 +5,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 140px;
+    @include sm {
+      padding: 0 40px;
+    }
+    @include xs {
+      padding: 0;
+    }
     .features-text {
       max-width: 750px;
       .features-title {

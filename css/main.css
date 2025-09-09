@@ -377,6 +377,13 @@ iframe {
   overflow: hidden;
   position: relative;
 }
+.video:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.video:hover::after {
+  opacity: 0;
+}
 .video::before {
   content: "\f144";
   font-family: "Line Awesome Free";
@@ -414,6 +421,17 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 140px;
+}
+@media (max-width: 991px) {
+  .features-section .features-cont {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 767px) {
+  .features-section .features-cont {
+    padding: 0;
+  }
 }
 .features-section .features-cont .features-text {
   max-width: 750px;
@@ -821,7 +839,8 @@ iframe {
 }
 .form-section .form-cont .selling-info .counter {
   display: flex;
-  gap: 100px;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
   border: 2px solid #ededed;
   border-radius: 30px;

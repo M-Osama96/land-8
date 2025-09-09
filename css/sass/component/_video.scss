@@ -9,6 +9,13 @@
   border-radius: 25px;
   overflow: hidden;
   position: relative;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  &:hover::after {
+    opacity: 0;
+  }
 
   &::before {
     content: "\f144";

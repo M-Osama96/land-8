@@ -61,7 +61,8 @@
       }
       .counter {
         display: flex;
-        gap: 100px;
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
         border: 2px solid #ededed;
         border-radius: 30px;
