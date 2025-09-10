@@ -376,13 +376,13 @@ iframe {
   border-radius: 25px;
   overflow: hidden;
   position: relative;
-}
-.video:hover {
   cursor: pointer;
+}
+.video:hover img {
   transform: scale(1.05);
 }
-.video:hover::after {
-  opacity: 0;
+.video img {
+  transition: all 0.3s ease-in-out;
 }
 .video::before {
   content: "\f144";
@@ -935,6 +935,7 @@ iframe {
 }
 .form-section .form-cont .contact-form .form-grid .form-group .form-input {
   border-color: transparent;
+  background-color: #ffffff;
   border-radius: 25px;
   height: 50px;
   padding: 0 30px;
